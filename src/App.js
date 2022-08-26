@@ -7,22 +7,22 @@ import SideProfile from "./components/SideProfile";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <ChakraProvider>
-      <div>
-        <Box sx={{ display: "flex", height: "100vh", overflow: "hidden" }}>
-          <Box sx={{ overflow: "scroll", width: "50%" }}>
-            <Header />
-            <Home />
-            <About />
-            <Projects />
-            <Skills />
-          </Box>
-          <SideProfile />
+      <Box sx={{ display: "flex", height: "100vh", overflow: "hidden" }}>
+        <Box sx={{ overflow: "scroll", width: "50%", mx: "1.5rem" }}>
+          <Header />
+          <Home />
+          <About />
+          <Projects />
+          <Skills />
+          <Footer />
         </Box>
-      </div>
+        <SideProfile />
+      </Box>
     </ChakraProvider>
   );
 };

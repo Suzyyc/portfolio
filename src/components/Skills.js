@@ -1,21 +1,26 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 
 const Skills = () => {
   return (
-    <Box sx={{ display: flex }}>
+    <Box sx={{ display: "flex" }}>
       <Box>
-        <Heading></Heading>
-        <Text></Text>
-        <Text></Text>
-        <Text></Text>
-        <Text></Text>
+        <UnorderedList>
+          <Heading>Frontend</Heading>
+          <ListItem>Javascript</ListItem>
+          <ListItem>React</ListItem>
+          <ListItem>HTML</ListItem>
+          <ListItem>CSS</ListItem>
+        </UnorderedList>
       </Box>
       <Box>
-        <Heading></Heading>
-        <Text></Text>
-        <Text></Text>
-        <Text></Text>
-        <Text></Text>
+        <UnorderedList sx={{ ml: "2rem" }}>
+          <Heading>Backend</Heading>
+          <ListItem>Python</ListItem>
+          <ListItem>NodeJS</ListItem>
+          <ListItem>Express</ListItem>
+          <ListItem>MongoDB</ListItem>
+          <ListItem>PostgreSQL</ListItem>
+        </UnorderedList>
       </Box>
     </Box>
   );

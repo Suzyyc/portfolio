@@ -25,9 +25,10 @@ const Home = () => {
           <u> Quora</u>
         </Link>
       </Box>
-      <Text>
-        To find out more about me and see my projects <BsArrowDown />{" "}
-      </Text>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Text>To find out more about me and see my projects</Text>
+        <BsArrowDown />{" "}
+      </Box>
     </Box>
   );
 };

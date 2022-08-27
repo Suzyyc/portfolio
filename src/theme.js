@@ -6,7 +6,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `'Bubbler One', sans-serif;`,
-    body: `'Bubbler One', sans-serif;`,
+    body: `'Nunito', sans-serif;`,
   },
 });
 

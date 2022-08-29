@@ -12,7 +12,7 @@ const Projects = () => {
       <Heading sx={{ mb: "1rem" }}>PROJECTS</Heading>
 
       <Box
-        sx={{ position: "relative" }}
+        sx={{ position: "relative", display: "grid" }}
         onMouseEnter={() => {
           handleHover("hydrate");
         }}

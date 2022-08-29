@@ -6,7 +6,7 @@ const Home = () => {
     <Box sx={{ mb: "4rem" }}>
       <Heading sx={{ fontSize: "80px" }}>Susanna Cho</Heading>
       <Text sx={{ fontSize: "30px" }}>Software Engineer</Text>
-      <Box sx={{ mt: "8rem" }}>
+      <Box sx={{ mt: "8rem" }} id="contact">
         <Text>
           <b>Address</b> Melbourne, VIC
         </Text>

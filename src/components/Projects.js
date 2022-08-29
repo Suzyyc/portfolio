@@ -8,7 +8,7 @@ const Projects = () => {
   };
 
   return (
-    <Box sx={{ mt: "14rem" }}>
+    <Box sx={{ mt: "14rem" }} id="projects">
       <Heading sx={{ mb: "1rem" }}>PROJECTS</Heading>
 
       <Box
@@ -33,6 +33,7 @@ const Projects = () => {
           >
             Full Stack MERN application
             <Button variant={"outline"}>View project</Button>
+            <Button variant={"outline"}>View GitHub</Button>
           </Box>
         </Fade>
         <Image src="img/hydrate.jpg" />

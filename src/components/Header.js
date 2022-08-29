@@ -1,19 +1,26 @@
 import { Box, Link, Text } from "@chakra-ui/react";
 
 const Header = () => {
+  const handleScroll = (id) => {
+    const element = document.querySelector(id);
+    element.offsetParent.scrollTo({
+      top: element.offsetTop - 50,
+      behavior: "smooth",
+    });
+  };
   return (
-    <Box sx={{ display: "flex", mb: "14rem" }}>
-      <Link
-        href="/Users/susannacho/Desktop/Suzy/portfolio/public/Susanna _Cho.pdf"
-        isExternal
+    <Box sx={{ display: "flex", mb: "14rem", justifyContent: "space-between" }}>
+      <Box>
+        <Link href="/Susanna _Cho.pdf" isExternal>
+          Curriculum Vitae
+        </Link>
+      </Box>
+      <Box
+        sx={{ display: "flex", justifyContent: "space-evenly", width: "100%" }}
       >
-        Curriculum Vitae
-      </Link>
-      <Text>Curriculum Vitae</Text>
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Text>about</Text>
-        <Text>projects</Text>
-        <Text>contact</Text>
+        <Text onClick={() => handleScroll("#about")}>about</Text>
+        <Text onClick={() => handleScroll("#projects")}>projects</Text>
+        <Text onClick={() => handleScroll("#contact")}>contact</Text>
       </Box>
     </Box>
   );

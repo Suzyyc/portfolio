@@ -13,7 +13,14 @@ const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Box sx={{ display: "flex", height: "100vh", overflow: "hidden" }}>
-        <Box sx={{ overflow: "scroll", width: "50%", mx: "1.5rem" }}>
+        <Box
+          sx={{
+            overflow: "scroll",
+            width: "50%",
+            px: "1.5rem",
+            position: "relative",
+          }}
+        >
           <Header />
           <Container>
             <Home />

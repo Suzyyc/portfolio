@@ -2,7 +2,7 @@ import { Box, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 
 const Skills = () => {
   return (
-    <Box sx={{ mt: "14rem", mb: "8rem" }}>
+    <Box sx={{ mt: "10rem", mb: "8rem" }}>
       <Heading sx={{ fontSize: "50px", mb: "1rem" }}>Tech Stack</Heading>
       <Box sx={{ display: "flex" }}>
         <Box>

@@ -7,7 +7,6 @@ import SideProfile from "./components/SideProfile";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Footer from "./components/Footer";
 import theme from "./theme";
 
 const App = () => {
@@ -21,7 +20,6 @@ const App = () => {
             <About />
             <Projects />
             <Skills />
-            <Footer />
           </Container>
         </Box>
         <SideProfile />

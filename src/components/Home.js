@@ -3,13 +3,14 @@ import { BsArrowDown } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <Box>
-      <Heading>Susanna Cho</Heading>
-      <Text>Software Engineer</Text>
-      <Text>
-        <b>Address</b> Melbourne, VIC
-      </Text>
-      <Box>
+    <Box sx={{ mb: "4rem" }}>
+      <Heading sx={{ fontSize: "80px" }}>Susanna Cho</Heading>
+      <Text sx={{ fontSize: "30px" }}>Software Engineer</Text>
+      <Box sx={{ mt: "8rem" }}>
+        <Text>
+          <b>Address</b> Melbourne, VIC
+        </Text>
+
         <Link href="https://www.linkedin.com/in/s-cho/" isExternal>
           <u>Linkedin </u>
         </Link>
@@ -25,7 +26,7 @@ const Home = () => {
           <u> Quora</u>
         </Link>
       </Box>
-      <Box sx={{ display: "flex", alignItems: "center" }}>
+      <Box sx={{ display: "flex", alignItems: "center", mt: "6rem" }}>
         <Text>To find out more about me and see my projects</Text>
         <BsArrowDown />{" "}
       </Box>

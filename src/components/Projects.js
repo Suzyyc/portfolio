@@ -8,8 +8,8 @@ const Projects = () => {
   };
 
   return (
-    <Box>
-      <Heading>PROJECTS</Heading>
+    <Box sx={{ mt: "14rem" }}>
+      <Heading sx={{ mb: "1rem" }}>PROJECTS</Heading>
 
       <Box
         sx={{ position: "relative" }}

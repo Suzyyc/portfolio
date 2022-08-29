@@ -2,8 +2,8 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box>
-      <Heading>ABOUT</Heading>
+    <Box sx={{ mt: "15rem" }}>
+      <Heading sx={{ mb: "1rem" }}>ABOUT</Heading>
       <Text>Hey there! I’m Susanna</Text>
       <Text>
         I‘m an Admin coordinator turned Software Engineer. With a love of

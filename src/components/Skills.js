@@ -1,4 +1,4 @@
-import { Box, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 
 const Skills = () => {
   return (

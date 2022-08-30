@@ -1,4 +1,4 @@
-import { Box, Button, Fade, Heading, Image, SlideFade } from "@chakra-ui/react";
+import { Box, Button, Fade, Heading, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import { mobileMedia } from "../utlis/media";
 

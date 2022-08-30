@@ -10,8 +10,19 @@ const SideProfile = () => {
         [mobileMedia]: { width: "100%", order: -1 },
       }}
     >
-      <Box sx={{ p: "12rem", [mobileMedia]: { p: "4rem" } }}>
-        <Image src="/img/Memc.jpg" />
+      <Box
+        sx={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Image
+          sx={{ maxWidth: "250px", [mobileMedia]: { py: "4rem" } }}
+          src="/img/Memc.jpg"
+        />
       </Box>
     </Box>
   );

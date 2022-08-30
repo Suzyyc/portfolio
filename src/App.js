@@ -22,7 +22,7 @@ const App = () => {
           [mobileMedia]: {
             flexDirection: "column",
             overflow: "visible",
-            pt: "2rem",
+            pt: "53px",
           },
         }}
       >

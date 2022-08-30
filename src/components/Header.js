@@ -40,16 +40,13 @@ const Header = () => {
       <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
         <Button
           as={"a"}
-          href="/Susanna _Cho.pdf"
+          href="/Susanna_Cho.pdf"
           variant={"outline"}
           size={"sm"}
           target="_blank"
         >
           Curriculum Vitae
         </Button>
-        {/* <Link href="/Susanna _Cho.pdf" isExternal>
-          Curriculum Vitae
-        </Link> */}
       </Box>
       <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
         <Text onClick={() => handleScroll("#about")} sx={{ mr: "1rem" }}>

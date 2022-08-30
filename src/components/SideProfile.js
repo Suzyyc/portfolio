@@ -20,7 +20,11 @@ const SideProfile = () => {
         }}
       >
         <Image
-          sx={{ maxWidth: "250px", [mobileMedia]: { py: "4rem" } }}
+          sx={{
+            maxWidth: "320px",
+            borderRadius: "1rem",
+            [mobileMedia]: { py: "4rem" },
+          }}
           src="/img/Memc.jpg"
         />
       </Box>

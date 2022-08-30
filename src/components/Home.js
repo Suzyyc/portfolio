@@ -1,10 +1,13 @@
 import { Heading, Text, Box, Link } from "@chakra-ui/react";
 import { BsArrowDown } from "react-icons/bs";
+import { mobileMedia } from "../utlis/media";
 
 const Home = () => {
   return (
     <Box sx={{ mb: "4rem" }}>
-      <Heading sx={{ fontSize: "80px" }}>Susanna Cho</Heading>
+      <Heading sx={{ fontSize: "80px", [mobileMedia]: { fontSize: "60px" } }}>
+        Susanna Cho
+      </Heading>
       <Text sx={{ fontSize: "30px" }}>Software Engineer</Text>
       <Box sx={{ mt: "8rem" }} id="contact">
         <Text>

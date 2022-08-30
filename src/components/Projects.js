@@ -1,5 +1,6 @@
 import { Box, Button, Fade, Heading, Image, SlideFade } from "@chakra-ui/react";
 import { useState } from "react";
+import { mobileMedia } from "../utlis/media";
 
 const Link = ({ label, href, sx }) => {
   return (
@@ -18,7 +19,12 @@ const Projects = () => {
   return (
     <Box sx={{ mt: "14rem" }} id="projects">
       <Heading sx={{ mb: "1rem" }}>PROJECTS</Heading>
-      <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          display: "flex",
+          [mobileMedia]: { display: "flex", flexDirection: "column" },
+        }}
+      >
         <Box
           sx={{ position: "relative" }}
           onMouseEnter={() => {
@@ -104,7 +110,12 @@ const Projects = () => {
         </Box>
       </Box>
 
-      <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          display: "flex",
+          [mobileMedia]: { display: "flex", flexDirection: "column" },
+        }}
+      >
         <Box
           sx={{ position: "relative" }}
           onMouseEnter={() => {

@@ -1,25 +1,55 @@
-import { Box, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Link, Text, useMediaQuery } from "@chakra-ui/react";
+import { mobileMedia } from "../utlis/media";
+import theme from "../theme";
 
 const Header = () => {
+  const [isMobile] = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+
   const handleScroll = (id) => {
     const element = document.querySelector(id);
-    element.offsetParent.scrollTo({
-      top: element.offsetTop - 50,
-      behavior: "smooth",
-    });
+    if (isMobile) {
+      window.scrollTo({
+        top: element.getBoundingClientRect().top + window.scrollY - 100,
+        behavior: "smooth",
+      });
+    } else {
+      element.offsetParent.scrollTo({
+        top: element.offsetTop - 100,
+        behavior: "smooth",
+      });
+    }
   };
+
   return (
     <Box
       sx={{
         display: "flex",
-        mb: "14rem",
         justifyContent: "space-between",
+        position: "fixed",
+        bgColor: "white",
+        width: "50%",
+        zIndex: 1,
+        fontSize: "18px",
+        py: 2.5,
+        px: 3,
+        alignItems: "center",
+        borderBottom: "1px solid #f5f5f5",
+        [mobileMedia]: { width: "100%" },
       }}
     >
       <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
-        <Link href="/Susanna _Cho.pdf" isExternal>
+        <Button
+          as={"a"}
+          href="/Susanna _Cho.pdf"
+          variant={"outline"}
+          size={"sm"}
+          target="_blank"
+        >
           Curriculum Vitae
-        </Link>
+        </Button>
+        {/* <Link href="/Susanna _Cho.pdf" isExternal>
+          Curriculum Vitae
+        </Link> */}
       </Box>
       <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
         <Text onClick={() => handleScroll("#about")} sx={{ mr: "1rem" }}>

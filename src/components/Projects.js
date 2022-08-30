@@ -1,6 +1,14 @@
 import { Box, Button, Fade, Heading, Image, SlideFade } from "@chakra-ui/react";
 import { useState } from "react";
 
+const Link = ({ label, href, sx }) => {
+  return (
+    <Button variant={"outline"} sx={sx} as={"a"} href={href} target={"_blank"}>
+      {label}
+    </Button>
+  );
+};
+
 const Projects = () => {
   const [showProject, setShowProject] = useState(null);
   const handleHover = (project) => {
@@ -38,10 +46,15 @@ const Projects = () => {
             >
               Full Stack MERN application
               <Box>
-                <Button variant={"outline"} sx={{ mr: "1rem" }}>
-                  View project
-                </Button>
-                <Button variant={"outline"}>View GitHub</Button>
+                <Link
+                  href={"http://hydrate-me-ui.herokuapp.com"}
+                  label="View project"
+                  sx={{ mr: "0.5rem" }}
+                />
+                <Link
+                  href={"https://github.com/Suzyyc/hydrate-me"}
+                  label="View GitHub"
+                />
               </Box>
             </Box>
           </Fade>
@@ -75,10 +88,15 @@ const Projects = () => {
             >
               Full CRUD application using NodeJS, Express, MongoDB, Bootstrap
               <Box>
-                <Button variant={"outline"} sx={{ mr: "1rem" }}>
-                  View project
-                </Button>
-                <Button variant={"outline"}>View GitHub</Button>
+                <Link
+                  href={"https://skincarejournal.herokuapp.com/login"}
+                  label="View project"
+                  sx={{ mr: "0.5rem" }}
+                />
+                <Link
+                  href={"https://github.com/Suzyyc/skincare-journal"}
+                  label="View GitHub"
+                />
               </Box>
             </Box>
           </Fade>
@@ -114,10 +132,15 @@ const Projects = () => {
             >
               Interactive game using HTML, CSS and DOM Manipulation
               <Box>
-                <Button variant={"outline"} sx={{ mr: "1rem" }}>
-                  View project
-                </Button>
-                <Button variant={"outline"}>View GitHub</Button>
+                <Link
+                  href={"https://suzyyc.github.io/Tic-Tac-Toe/"}
+                  label="View project"
+                  sx={{ mr: "0.5rem" }}
+                />
+                <Link
+                  href={"https://github.com/Suzyyc/Tic-Tac-Toe"}
+                  label="View GitHub"
+                />
               </Box>
             </Box>
           </Fade>
@@ -155,6 +178,15 @@ const Projects = () => {
                   View project
                 </Button>
                 <Button variant={"outline"}>View GitHub</Button>
+                <Link
+                  href={"https://safe-journey-travels.herokuapp.com/"}
+                  label="View project"
+                  sx={{ mr: "0.5rem" }}
+                />
+                <Link
+                  href={"https://github.com/Suzyyc/project-safe-journey"}
+                  label="View GitHub"
+                />
               </Box>
             </Box>
           </Fade>

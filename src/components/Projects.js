@@ -174,10 +174,6 @@ const Projects = () => {
             >
               Full Stack MERN application
               <Box>
-                <Button variant={"outline"} sx={{ mr: "1rem" }}>
-                  View project
-                </Button>
-                <Button variant={"outline"}>View GitHub</Button>
                 <Link
                   href={"https://safe-journey-travels.herokuapp.com/"}
                   label="View project"

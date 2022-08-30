@@ -1,4 +1,4 @@
-import { Box, Button, Link, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Button, Text, useMediaQuery } from "@chakra-ui/react";
 import { mobileMedia } from "../utlis/media";
 import theme from "../theme";
 

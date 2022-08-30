@@ -37,8 +37,7 @@ const Projects = () => {
           <Fade in={showProject === "hydrate"}>
             <Box
               sx={{
-                bgColor: "rgba(255, 255, 255, 0.5)",
-                color: "395B64",
+                bgColor: "rgba(255, 255, 255, 0.7)",
                 position: "absolute",
                 width: "100%",
                 height: "100%",
@@ -48,6 +47,8 @@ const Projects = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
+                textAlign: "center",
+                padding: "5px",
               }}
             >
               Full Stack MERN application
@@ -79,8 +80,7 @@ const Projects = () => {
           <Fade in={showProject === "skincare"}>
             <Box
               sx={{
-                bgColor: "rgba(255, 255, 255, 0.5)",
-                color: "395B64",
+                bgColor: "rgba(255, 255, 255, 0.7)",
                 position: "absolute",
                 width: "100%",
                 height: "100%",
@@ -90,6 +90,8 @@ const Projects = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
+                textAlign: "center",
+                padding: "5px",
               }}
             >
               Full CRUD application using NodeJS, Express, MongoDB, Bootstrap
@@ -128,8 +130,7 @@ const Projects = () => {
           <Fade in={showProject === "tic-tac-toe"}>
             <Box
               sx={{
-                bgColor: "rgba(255, 255, 255, 0.5)",
-                color: "395B64",
+                bgColor: "rgba(255, 255, 255, 0.7)",
                 position: "absolute",
                 width: "100%",
                 height: "100%",
@@ -139,6 +140,8 @@ const Projects = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
+                textAlign: "center",
+                padding: "5px",
               }}
             >
               Interactive game using HTML, CSS and DOM Manipulation
@@ -161,17 +164,16 @@ const Projects = () => {
         <Box
           sx={{ position: "relative" }}
           onMouseEnter={() => {
-            handleHover("tic-tac-toe");
+            handleHover("safe-journey");
           }}
           onMouseLeave={() => {
             handleHover(null);
           }}
         >
-          <Fade in={showProject === "tic-tac-toe"}>
+          <Fade in={showProject === "safe-journey"}>
             <Box
               sx={{
-                bgColor: "rgba(255, 255, 255, 0.5)",
-                color: "395B64",
+                bgColor: "rgba(255, 255, 255, 0.7)",
                 position: "absolute",
                 width: "100%",
                 height: "100%",
@@ -181,6 +183,8 @@ const Projects = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
+                textAlign: "center",
+                padding: "5px",
               }}
             >
               Full Stack MERN application

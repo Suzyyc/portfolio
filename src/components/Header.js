@@ -45,7 +45,7 @@ const Header = () => {
           size={"sm"}
           target="_blank"
         >
-          Curriculum Vitae
+          Resume
         </Button>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "flex-end" }}>

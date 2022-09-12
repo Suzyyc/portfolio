@@ -1,5 +1,4 @@
-import { Box, Heading, ListItem, UnorderedList, Image } from "@chakra-ui/react";
-import { mobileMedia } from "../utlis/media";
+import { Box, Heading, Image } from "@chakra-ui/react";
 
 const Skills = () => {
   return (

@@ -1,30 +1,13 @@
-import {
-  Box,
-  Heading,
-  ListItem,
-  UnorderedList,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading, ListItem, UnorderedList, Image } from "@chakra-ui/react";
 import { mobileMedia } from "../utlis/media";
 
 const Skills = () => {
   return (
     <Box sx={{ mt: "10rem", mb: "8rem" }}>
       <Heading sx={{ fontSize: "50px", mb: "1rem" }}>Tech Stack</Heading>
-      <Box sx={{ display: "flex", listStyle: "none" }}>
-        <Box>
-          <UnorderedList>
-            <ListItem>CSS</ListItem>
-            <ListItem>Python</ListItem>
-
-            <ListItem>Express</ListItem>
-            <ListItem>MongoDB</ListItem>
-            <ListItem>PostgreSQL</ListItem>
-          </UnorderedList>
-        </Box>
-      </Box>
-      <Box sx={{ display: "flex", gap: "2rem" }}>
+      <Box
+        sx={{ display: "flex", gap: "2rem", justifyContent: "space-evenly" }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -35,8 +18,6 @@ const Skills = () => {
           <Image
             sx={{
               maxWidth: "80px",
-              borderRadius: "1rem",
-              [mobileMedia]: { py: "4rem" },
             }}
             src="/img/react.png"
           />{" "}
@@ -59,8 +40,6 @@ const Skills = () => {
           <Image
             sx={{
               maxWidth: "70px",
-              borderRadius: "1rem",
-              [mobileMedia]: { py: "4rem" },
             }}
             src="/img/nodejs.png"
           />{" "}
@@ -83,8 +62,6 @@ const Skills = () => {
           <Image
             sx={{
               maxWidth: "80px",
-              borderRadius: "1rem",
-              [mobileMedia]: { py: "4rem" },
             }}
             src="/img/javascript.png"
           />{" "}
@@ -97,6 +74,10 @@ const Skills = () => {
             Javascript
           </Box>
         </Box>
+      </Box>
+      <Box
+        sx={{ display: "flex", gap: "2rem", justifyContent: "space-evenly" }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -107,8 +88,6 @@ const Skills = () => {
           <Image
             sx={{
               maxWidth: "80px",
-              borderRadius: "1rem",
-              [mobileMedia]: { py: "4rem" },
             }}
             src="/img/html.png"
           />{" "}
@@ -119,6 +98,122 @@ const Skills = () => {
             }}
           >
             HTML
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Image
+            sx={{
+              maxWidth: "80px",
+            }}
+            src="/img/css.png"
+          />{" "}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            CSS
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Image
+            sx={{
+              maxWidth: "80px",
+            }}
+            src="/img/express.png"
+          />{" "}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            Express
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        sx={{ display: "flex", gap: "2rem", justifyContent: "space-evenly" }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Image
+            sx={{
+              maxWidth: "70px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+            src="/img/mongo.png"
+          />{" "}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            MongoDB
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Image
+            sx={{
+              maxWidth: "80px",
+            }}
+            src="/img/postgresql.png"
+          />{" "}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            PostgreSQL
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Image
+            sx={{
+              maxWidth: "80px",
+            }}
+            src="/img/python.png"
+          />{" "}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            Python
           </Box>
         </Box>
       </Box>

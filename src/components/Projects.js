@@ -54,7 +54,7 @@ const Projects = () => {
               Full Stack MERN application
               <Box>
                 <Link
-                  href={"http://hydrate-me-ui.herokuapp.com"}
+                  href={"https://hydrate-me.netlify.app/"}
                   label="View project"
                   sx={{ mr: "0.5rem" }}
                 />

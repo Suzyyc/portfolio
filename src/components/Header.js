@@ -55,6 +55,9 @@ const Header = () => {
         <Text onClick={() => handleScroll("#projects")} sx={{ mr: "1rem" }}>
           projects
         </Text>
+        <Text onClick={() => handleScroll("#experience")} sx={{ mr: "1rem" }}>
+          experience
+        </Text>
         <Text onClick={() => handleScroll("#contact")}>contact</Text>
       </Box>
     </Box>

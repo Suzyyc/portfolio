@@ -1,4 +1,3 @@
-// import "./App.css";
 import { Box, ChakraProvider, Container } from "@chakra-ui/react";
 
 import Header from "./components/Header";
@@ -9,6 +8,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import theme from "./theme";
 import { mobileMedia } from "./utlis/media";
+import Experience from "./components/Experience";
 
 const App = () => {
   return (
@@ -41,6 +41,7 @@ const App = () => {
             <About />
             <Projects />
             <Skills />
+            <Experience />
           </Container>
         </Box>
         <SideProfile />

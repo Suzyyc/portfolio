@@ -97,7 +97,7 @@ const Projects = () => {
               Full CRUD application using NodeJS, Express, MongoDB, Bootstrap
               <Box>
                 <Link
-                  href={"https://skincarejournal.herokuapp.com/login"}
+                  href={"https://skincare-journal.onrender.com/"}
                   label="View project"
                   sx={{ mr: "0.5rem" }}
                 />
@@ -190,7 +190,7 @@ const Projects = () => {
               Full Stack MERN application
               <Box>
                 <Link
-                  href={"https://safe-journey-travels.herokuapp.com/"}
+                  href={"https://project-safe-journey.netlify.app/"}
                   label="View project"
                   sx={{ mr: "0.5rem" }}
                 />

@@ -11,7 +11,7 @@ const About = () => {
         started my career into tech.
       </Text>
       <Text>
-        When I’m not coding, you will find me hiking, watching tv shows or
+        When I’m not coding, you will find me watching tv shows, relaxing with a mask on or
         cooking up a storm in the kitchen. P.S the kitchen has never caught on
         🔥
       </Text>

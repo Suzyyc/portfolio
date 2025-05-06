@@ -160,7 +160,7 @@ const Skills = () => {
               display: "flex",
               justifyContent: "center",
             }}
-            src="/img/mongo.png"
+            src="/img/tableau.png"
           />{" "}
           <Box
             sx={{
@@ -168,7 +168,7 @@ const Skills = () => {
               justifyContent: "center",
             }}
           >
-            MongoDB
+            Tableau
           </Box>
         </Box>
         <Box

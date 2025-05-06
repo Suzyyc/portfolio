@@ -5,10 +5,10 @@ import { mobileMedia } from "../utlis/media";
 const Home = () => {
   return (
     <Box sx={{ mb: "4rem" }}>
-      <Heading sx={{ fontSize: "80px", [mobileMedia]: { fontSize: "60px" } }}>
+      <Heading sx={{ fontSize: "60px", [mobileMedia]: { fontSize: "40px" } }}>
         Susanna Cho
       </Heading>
-      <Text sx={{ fontSize: "30px" }}>Software Engineer</Text>
+      <Text sx={{ fontSize: "30px" }}>Software & Data Engineer</Text>
       <Box sx={{ mt: "8rem" }} id="contact">
         <Text>
           <b>Address</b> Melbourne, VIC
